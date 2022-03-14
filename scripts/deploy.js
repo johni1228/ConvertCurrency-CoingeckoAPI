@@ -15,7 +15,7 @@ async function main() {
 
   // We get the contract to deploy
   const Convert = await hre.ethers.getContractFactory("Convert");
-  const convert = await Convert.deploy("Hello, Hardhat!");
+  const convert = await Convert.deploy();
 
   await convert.deployed();
 
